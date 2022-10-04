@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://freepngimg.com/download/gift/22649-9-birthday-gift.png">
+
+    <meta property="og:image" content="https://agiftidea.com/wp-content/uploads/2020/04/birthday-celebration.jpeg">
+    <meta property="og:description" content="Hi Joce!">
+    <meta property="og:title" content="Happy Birthday!">
+
+
+    <title>Birthday Card</title>
+    <style>
+        * {
+            font-family: 'Yusei Magic', sans-serif;
+        }
+
+        body {
+        background-color: #7C5295;
+	}
+	    
+        .card {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 40px auto;
+        }
+
+        .opening_msg {
+            color: white;
+            text-align: center;
+        }
+
+        .step1 {
+            display: block;
+            cursor: pointer;
+        }
+
+        .step2 {
+            display: none;
+        }
+
+        .profile_ptr {
+            width: 200px;
+            height: 200px;
+            background-image: url('joce.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            border-radius: 100px;
+            border: 5px solid white;
+            margin: 75px auto 20px auto;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .header {
+            color: white;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 30px;
+        }
+
+        .massage {
+            background-color: ivory;
+            text-align: center;
+            width: 400px;
+            margin: 8px auto 0px auto;
+            padding: 22px;
+            color: rgb(22, 18, 18);
+            border-radius: 10px;
+            
+        }
+
+        @media screen and (max-width: 760px) {
+            .massage {
+                width: 300px;
+                padding: 14px;
+            }
+
+            .profile_ptr {
+                width: 140px;
+                height: 140px;
+                margin: 45px auto 20px auto;
+            }
+
+            .header {
+                font-size: 25px;
+            }
+
+            .card {
+                width: 160px;
+                height: 160px;
+                margin: 180px auto 40px auto;
+            }
+
+            .opening_msg {
+                font-size: 20px
+            }
+        }
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("step1")[0].style.display = 'none';
+            document.getElementsByClassName("step2")[0].style.display = 'block';
+        }
+        function rtanny() {
+            alert('Yay,you found me!');
+            window.location.href = "https://www.youtube.com/watch?v=v0UucnzH4B0";
+
+        }
+    </script>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>
+</head>
+<body>
+    <div class="step1" onclick="open_letter()">
+        <div class="card"></div>
+        <h2 class="opening_msg">Open the Letter!!</h2>
+    </div> 
+    <div class="step2">
+        <div class="profile_ptr" onclick="rtanny()"></div>
+        <h1 class="header">Congratulations!!</h1>
+        <div class="massage">
+            Dear Ms. Rabbit, <br />
+            <hr>
+            Hope your birthday's filled with lots of good things for you! :) <br />
+            It certainly is wonderful to have met you. <br />
+            May all your dreams come true this year! <br />
+            <br />
+            Yours truly, <br />
+            Fadil </br>
+        </div>
+    </div>
+</body>
+</html>
